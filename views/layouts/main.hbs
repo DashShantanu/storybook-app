@@ -24,6 +24,8 @@
     <title>StoryBooks</title>
   </head>
   <body>
+    {{> _header }}
+
     <div class='container'>
       <!-- This is where the content will be rendered -->
       {{{body}}}
@@ -32,5 +34,8 @@
     <script
       src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'
     ></script>
+    <script>
+      M.Sidenav.init(document.querySelectorAll('.sidenav'));
+    </script>
   </body>
 </html>
